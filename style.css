@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color:peachpuff;
+    background-color:lightpink;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
 .small-title {
     font-size: 35px;
     height: 10vh;
-    color:red;
+    color:deeppink;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .carousel-container {
@@ -60,8 +60,3 @@ header {
     right: 0;
 }
 
-position: relative;
-width: 472px;
-height: 352px;
-
-background: #FFEAF9;
