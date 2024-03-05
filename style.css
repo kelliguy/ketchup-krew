@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:peachpuff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    height: 50vh; 
+}
+
+.title-container {
+    margin-bottom: 0.50px; 
+    font-size: 40px;
+}
+.small-title {
+    font-size: 35px;
+    height: 10vh;
+    color:red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.carousel-container {
+    position: relative;
+    max-width: 600px; /* Adjust carousel width */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+position: relative;
+width: 472px;
+height: 352px;
+
+background: #FFEAF9;
