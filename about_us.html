@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="style.css"> 
     <header>
         <div class="title-container">
@@ -25,11 +25,11 @@
        
       
         <div class="button-container">
-          <button class="button">SHOP</button>
-          <button class="button">DEALS</button>
-          <button class="button">ABOUT US</button>
-          <button class="button">BRANDS</button>
-      </div>
+            <button class="button"><a href="home.html">HOME</button></a>
+            <button class="button"><a href="shops.html">SHOP</a></button>
+            <button class="button"><a href="about_us.html">ABOUT US</button></a>
+            <button class="button"><a href="view.html">VIEW ITEM</button></a>
+        </div>
     </header>
     
 </head>
@@ -49,45 +49,57 @@
             </div>
         </div>
     </body>
+    <hr>
     <footer>
-        <div class="small-box">
-          <div class="footer-container">
-            <div class="contact-info">
-                <h3>Contact Us</h3>
-                <p>Email: doggysayswhat?@hotmail.com</p>
-                <p>Phone: 123-456-7890</p>
-                <p>123 Main St, City, Country</p>
-            </div>
-            <div class="quick-links">
+        <div class="footer-container">
+    
+            <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="about_us.html">About Us</a></li>
-                   
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="view.html">View Item</a></li>
                 </ul>
             </div>
-            <div class="social-media">
-                <h3>Connect with Us</h3>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li>Email: info@example.com</li>
+                    <li>Phone: +1234567890</li>
                 </ul>
             </div>
+            <div class="footer-section">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="https://th.bing.com/th/id/OIP.1c38Ede1PpSZZQmPTbsZBQHaHw?w=860&h=900&rs=1&pid=ImgDetMain" alt="Facebook"></a>
+                    <a href="#"><img src="https://th.bing.com/th/id/OIP.5cum-rFsI8vQJWCziVC3kgHaHw?rs=1&pid=ImgDetMain" alt="Twitter"></a>
+                    <a href="#"><img src="https://th.bing.com/th/id/R.065cb2c1afca3b5d269bfdc11cee435c?rik=xooZK0bU4OOANQ&pid=ImgRaw&r=0" alt="Instagram"></a>
+                </div>
+            </div>
         </div>
-          <button onclick="backToTop()" class="back-to-top-btn">&#8679; Back to Top</button>
         </footer>
-      
-        <script>
-            function backToTop() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-        </script>
-        </div>
-       
-      </html>
-      
-
+        </body>
+        
+            <button onclick="backToTop()" class="back-to-top-btn">&#8679; Back to Top</button>
+          </footer>
+        
+          <script>
+              function backToTop() {
+                  window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth'
+                  });
+              }
+          </script>
+          </div>
+         
+        </html>
+        
