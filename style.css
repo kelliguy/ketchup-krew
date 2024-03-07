@@ -165,28 +165,7 @@ h1 {
 .shop {
     box-align:right;
 }
-.search-bar {
-    display: flex;
-}
 
-.search-bar input[type="text"] {
-    padding: 8px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-}
-
-.search-bar button {
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-.search-bar button:hover {
-    background-color: #0056b3;
-}
 body {
     margin: 0;
     padding: 0;
@@ -194,7 +173,7 @@ body {
 }
 
 footer {
-    background-color:hsl(336, 84%, 93%);
+    background-color:rgb(252, 181, 209);
     color:#666;
     padding: 40px 0;
     font-weight: 900;
@@ -205,7 +184,7 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:flex-end;
 }
 
 .footer-section {
@@ -314,9 +293,9 @@ footer {
 }
 .catalog {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:inherit;
 }
 
 .item {
@@ -344,3 +323,181 @@ footer {
 .details {
     color:rebeccapurple;
 }
+.shopping-cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.shopping-cart img {
+    width: 60px;
+    height: auto;
+}
+
+#cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.image img {
+    display: block;
+    width: 250px; /* Adjust image width as needed */
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.more-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.text_title {
+    border: 5px solid #333; /* Adjust thickness and color as needed */
+    padding: 20px;
+    display: inline-block; /* To fit the content width */
+    margin: 0;
+}
+.add-to-cart-btn {
+    background-color: red; /* Button background color */
+    color: #000000; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+.container {
+    text-align: center; 
+    margin-top: -150px; 
+}
+
+.image-box {
+    display:inline-table;
+    border: 2px solid #333; 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+.image-box img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.description {
+    margin-top: 10px; 
+    font-size: 16px; 
+    color: #333; 
+}
+.dog {
+    color:cornflowerblue;
+}
+
+.shop-now-btn {
+    background-color: hsl(0, 100%, 50%); /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Optional: Add additional styles to make the button stand out more, such as box shadow */
+.shop-now-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow on focus */
+}
+
+
+
+

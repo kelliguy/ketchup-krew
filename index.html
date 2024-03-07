@@ -24,7 +24,7 @@
         </div>
       
         <div class="button-container">
-          <button class="button"><a href="home.html">HOME</button></a>
+          <button class="button"><a href="index.html">HOME</button></a>
           <button class="button"><a href="shops.html">SHOP</a></button>
           <button class="button"><a href="about_us.html">ABOUT US</button></a>
           <button class="button"><a href="view.html">VIEW ITEM</button></a>
@@ -34,25 +34,41 @@
     
 </head>
 <hr>
-<div class="search-bar">
-  <input type="text" placeholder="Search...">
-  <button type="submit">Search</button>
-</div>
+
 <body>
+  <div class="carousel-container">
+    <div class="carousel">
+        <img src="C:\Users\kelli\Downloads\B43296AE-6B60-41EB-9664-7F7F9251A1C6.jpeg" alt="Image 1">
+        <img src="C:\Users\kelli\Downloads\23F46B2E-26C6-4528-9FB4-FC5175B39B3E.jpeg" alt="Image 2">
+        <img src="C:\Users\kelli\Downloads\thumbnail_8E2DD7B8-01C6-497B-952B-2BEDFC44D7B1.jpg" alt="Image 3">
+        
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+
   <div class="image-boxes">
     <div class="image-box">
       <h2 class="lol"> SMALL</h2>
-        <img src="https://th.bing.com/th/id/OIP.NveGHDtMGzcOb3ElbBbg2gHaHa?rs=1&pid=ImgDetMain" alt="Image 1">
-    </div>
+        <img src="C:\Users\kelli\Downloads\23F46B2E-26C6-4528-9FB4-FC5175B39B3E.jpeg" alt="Image 1">
+        <button class="shop-now-btn"><a href="shops.html">Shop Now</button></a>
+      </div>
     <div class="image-box">
       <h2 class="lol">MEDIUM</h2>
-        <img src="https://th.bing.com/th/id/R.c9dd8f3b63fe577e4a424d7762c64d4b?rik=IXRXyHsTm5itrQ&pid=ImgRaw&r=0" alt="Image 2">
-    </div>
+        <img src="C:\Users\kelli\Downloads\thumbnail_D0CA1B12-B88A-4285-BC82-E740C2458F24.jpg" alt="Image 2">
+        <button class="shop-now-btn"><a href="shops.html">Shop Now</button></a>
+      </div>
     <div class="image-box">
       <h2 class="lol">LARGE</h2>
-        <img src="https://www.regaldog.co.uk/wp-content/uploads/1970/01/Champagne-Pitbull-Gold-Collar-and-Lead-2-510x510.jpg" alt="Image 3">
-    </div>
+        <img src="C:\Users\kelli\Downloads\thumbnail_8E2DD7B8-01C6-497B-952B-2BEDFC44D7B1.jpg" alt="Image 3">
+        <button class="shop-now-btn"><a href="shops.html">Shop Now</button></a>
+      </div>
 </div>
+<div class="shopping-cart" onclick="toggleCart()">
+  <img src="https://purepng.com/public/uploads/medium/purepng.com-shopping-cartshoppingcarttrolleycarriagebuggysupermarkets-1421526532325wtdqo.png" alt="Shopping Cart">
+  <span id="cart-count">0</span>
+</div>
+<script src="script.js"></script>
 </body>
 <hr>
 <footer>
@@ -88,9 +104,9 @@
     <div class="footer-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-            <a href="#"><img src="https://th.bing.com/th/id/OIP.1c38Ede1PpSZZQmPTbsZBQHaHw?w=860&h=900&rs=1&pid=ImgDetMain" alt="Facebook"></a>
-            <a href="#"><img src="https://th.bing.com/th/id/OIP.5cum-rFsI8vQJWCziVC3kgHaHw?rs=1&pid=ImgDetMain" alt="Twitter"></a>
-            <a href="#"><img src="https://th.bing.com/th/id/R.065cb2c1afca3b5d269bfdc11cee435c?rik=xooZK0bU4OOANQ&pid=ImgRaw&r=0" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="https://th.bing.com/th/id/OIP.1c38Ede1PpSZZQmPTbsZBQHaHw?w=860&h=900&rs=1&pid=ImgDetMain" alt="Facebook"></a>
+            <a href="https://twitter.com/"><img src="https://th.bing.com/th/id/OIP.5cum-rFsI8vQJWCziVC3kgHaHw?rs=1&pid=ImgDetMain" alt="Twitter"></a>
+            <a href="https://twitter.com/"><img src="https://th.bing.com/th/id/R.065cb2c1afca3b5d269bfdc11cee435c?rik=xooZK0bU4OOANQ&pid=ImgRaw&r=0" alt="Instagram"></a>
         </div>
     </div>
 </div>
